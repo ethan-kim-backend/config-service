@@ -4,8 +4,26 @@ server:
 spring:
   application:
     name: config-service
+  profiles:
+    active: native
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
   cloud:
     config:
       server:
+        native:
+          search-locations: file://${user.home}/native-file-repo
         git:
-          uri: file:///Users/kim-daeyoung/git-local-repo
+#          uri: file:///Users/kim-daeyoung/git-local-repo
+          uri: https://github.com/ethan-kim-backend/spring-cloud-config.git
+          username: ethan-kim-backend
+          password: Eodudrnfl12!@
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health, busrefresh
