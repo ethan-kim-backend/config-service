@@ -20,7 +20,7 @@ spring:
 #          uri: file:///Users/kim-daeyoung/git-local-repo
           uri: https://github.com/ethan-kim-backend/spring-cloud-config.git
           username: ethan-kim-backend
-          password: Eodudrnfl12!@
+          password: eodudrnfl12!@
 
 management:
   endpoints:
