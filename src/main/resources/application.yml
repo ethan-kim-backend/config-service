@@ -5,7 +5,8 @@ spring:
   application:
     name: config-service
   profiles:
-    active: native
+#    active: native
+    active: default
   rabbitmq:
     host: 127.0.0.1
     port: 5672
